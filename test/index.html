@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <i class="fas fa-window-close item" style="cursor: pointer;">
+      <div class="drop">
+        something
+      </div>
+    </i>
+    <i class="fas fa-window-close item" style="cursor: pointer;">
+      <div class="drop">
+        something
+      </div>
+    </i>
+    <i class="fas fa-window-close item" style="cursor: pointer;">
+      <div class="drop">
+        something
+      </div>
+    </i>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+    $('.item').click(function () {
+      $(this).find('.drop').toggleClass('show');
+      $(this).siblings().find('.drop').removeClass('show')
+    })
+  </script>
+
+</body>
+
+</html>

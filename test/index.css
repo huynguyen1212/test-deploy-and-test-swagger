@@ -1,0 +1,19 @@
+.wrap .item {
+  margin-left: 30px;
+  padding: 10px;
+  background: green;
+  position: relative;
+}
+
+.wrap .item .drop{
+  display: none;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  padding: 30px;
+  background: red;
+}
+
+.wrap .item .show {
+  display: unset;
+}
